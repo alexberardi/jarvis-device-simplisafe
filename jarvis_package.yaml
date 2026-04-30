@@ -1,0 +1,26 @@
+name: "simplisafe"
+display_name: "SimpliSafe"
+description: "SimpliSafe home security — arm, disarm, sensor status, and lock control via the SimpliSafe cloud API."
+version: "1.0.0"
+min_jarvis_version: "0.9.0"
+license: "MIT"
+author:
+  github: "alexberardi"
+categories: ["smart-home", "security"]
+platforms: ["darwin", "linux"]
+keywords: ["simplisafe", "security", "alarm", "sensor", "lock", "home security"]
+
+components:
+  - type: device_protocol
+    name: simplisafe
+    path: device_families/simplisafe/protocol.py
+
+packages:
+  - name: httpx
+
+secrets:
+  - key: SIMPLISAFE_REFRESH_TOKEN
+    scope: integration
+    value_type: string
+    description: "OAuth refresh token (obtained via one-time browser login)"
+    sensitive: true
