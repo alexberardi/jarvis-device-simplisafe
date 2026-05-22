@@ -18,7 +18,7 @@ Arm, disarm, check sensor status, and control locks via the SimpliSafe cloud API
 SimpliSafe uses OAuth2 with PKCE and requires a browser-based login with MFA:
 
 ```bash
-python scripts/authorize.py
+python simplisafe_scripts/authorize.py
 ```
 
 This will:

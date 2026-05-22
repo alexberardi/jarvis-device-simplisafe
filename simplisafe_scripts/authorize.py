@@ -6,7 +6,7 @@ login + MFA flow, exchanges the code for tokens, and stores the refresh
 token in JarvisStorage.
 
 Usage:
-    python scripts/authorize.py
+    python simplisafe_scripts/authorize.py
 """
 
 from __future__ import annotations
@@ -15,10 +15,10 @@ import re
 import sys
 from pathlib import Path
 
-# Add parent so device_families is importable
+# Add the repo root so simplisafe_shared is importable when run from a checkout.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from device_families.simplisafe.simplisafe_client import (  # noqa: E402
+from simplisafe_shared.simplisafe_client import (  # noqa: E402
     exchange_authorization_code,
     generate_code_challenge,
     generate_code_verifier,

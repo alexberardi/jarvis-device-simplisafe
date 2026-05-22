@@ -39,7 +39,7 @@ except ImportError:
             self._log.debug(msg)
 
 
-from simplisafe_client import (
+from simplisafe_shared.simplisafe_client import (
     AUDIENCE,
     AUTHORIZE_URL,
     CLIENT_ID,
