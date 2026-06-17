@@ -1,0 +1,8 @@
+jarvis-device-simplisafe
+Copyright 2026 Alex Berardi
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This product includes software ported from the simplisafe-python project
+(https://pypi.org/project/simplisafe-python/), the upstream Python client
+for SimpliSafe home security systems.
