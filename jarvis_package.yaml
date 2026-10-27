@@ -1,7 +1,7 @@
 name: "simplisafe"
 display_name: "SimpliSafe"
 description: "SimpliSafe home security — arm, disarm, sensor status, and lock control via the SimpliSafe cloud API."
-version: "1.0.0"
+version: "1.0.1"
 min_jarvis_version: "0.9.0"
 license: Apache-2.0
 author:
